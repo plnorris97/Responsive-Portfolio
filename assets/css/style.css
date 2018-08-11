@@ -1,0 +1,264 @@
+body {
+    font-family: "Arial", Helvetica Neue, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    width: 100%;
+    color: #777777;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../../assets/images/light-grey-terrazzo.png");
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image */
+    background-repeat: repeat;
+    background-size: inherit;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;  
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #444444;
+}
+
+nav ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    padding: .8rem, 1rem;
+    display: block;
+    line-height: 1;
+}
+
+nav ul li {
+    border-bottom: 1px solid #dddddd;
+}
+
+nav {
+    background: #4aaaa5;
+    padding: .4rem 0 0;
+}
+nav div:first-child h1 {
+    line-height: 0px;
+    padding: .8rem 0;
+    text-align: center;
+}
+nav div:first-child {
+    margin: 0;
+}
+
+
+#linkref {
+    color: #000000;
+    text-decoration: none;
+    padding: 15px; 
+    text-align: center; 
+    margin: 10px;
+}
+
+h1 {
+    font-family: "Georgia", 'Times New Roman', Times, serif !important;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h2 {
+    font-family: "Georgia", 'Times New Roman', Times, serif !important;
+    margin-bottom: 20px !important;
+    margin-left: 20px !important;
+    font-size: 24px !important;
+    line-height: 45px !important;
+    color: #4aaaa5 !important;
+}
+
+p {
+    max-width: 100%;
+    margin: 10px;
+    word-wrap: break-word;
+}
+
+img {
+    position: relative;
+    float: left;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-right: 10px;
+    max-width: 250px;
+    max-height: 250px;
+    z-index: 0;
+}
+
+hr {
+    background: gray;
+    width: 0 auto;
+}
+
+h3 {
+    font-family: "Georgia", 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 33.33%;
+}
+
+.pimage {
+    position: relative;
+    max-width: auto;
+    display: flex;
+}
+
+.color-band {
+   display: block;
+   background: #4aaaa5;
+   position: absolute;
+   left: 20px;
+   right: 20px;
+   bottom: 0px;
+   width: 58%;
+   padding: 1px;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.push {
+    /* Creates sticky footer */
+    height: 50px;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    margin-top: -26px;
+    padding: 10px;
+    clear: both;
+    background: #666666;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 570px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background: #4aaaa5;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        background: none; 
+    }
+    nav div:first-child h1 {
+        padding: 0;
+        margin-left: 16px;
+        height: 0 auto; 
+    }
+    nav ul li {
+        border-bottom: none;
+    }
+    nav ul li a {
+        padding: 18px 16px;
+    }
+    .column {
+        width: 50%;
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+}
+
+
+
+
+    
+
+
+
+
